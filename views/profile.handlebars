@@ -1,0 +1,12 @@
+<div class="profile">
+    <h1>{{title}}</h1>
+
+    <p>Nombre: {{user.first_name}} {{user.last_name}}</p>
+    <p>Email: {{user.email}}</p>
+    <p>ID: {{user._id}}</p>
+
+    <form action="/api/sessions/logout" method="post">
+    <button type="submit">Cerrar sesión</button>
+    </form>
+
+</div>

@@ -1,0 +1,31 @@
+<div class="container">
+  <h1>{{title}}</h1>
+
+  <form action="/api/sessions/login" method="post">
+    <div>
+      <div>
+        <label for="email">Email:</label>
+        <br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="juanperez@mail.com"
+        />
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <br />
+        <input type="password" id="password" name="password" placeholder="****" />
+      </div>
+      <br />
+      <button type="submit">Ingresar</button>
+    </div>
+  </form>
+  <br>
+  ¿No tienes cuenta?
+  <a href="/register">Registrar</a>
+  <br>
+  ¿Olvidaste tu contraseña?<a href="/recupero">Recuperar</a>
+
+</div>
